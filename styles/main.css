@@ -1,0 +1,299 @@
+/* Reset Selector:*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style rules for ELEMENTS */
+a:hover {
+    cursor: url(../images/fist_icon.jpg);
+}
+
+a {
+    color: burlywood;
+}
+
+/*Style rules for HTML element*/
+html {
+    background-image: url(../images/home_backgroundImage.jpg);
+	background-size: contain;
+}
+
+/*Style rules for BODY element*/
+body {
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: bisque;
+}
+
+h1 {
+	color: rgb(106, 24, 109);
+    font-family:cursive;
+	font-style: italic;
+	font-size: 300%;
+    text-shadow: 8px 8px 8px black;
+	padding-bottom: 15px;
+	text-decoration: underline;
+	margin: 0 auto;
+}
+
+#printButton  {
+	width: 10em;
+	height: 3em;
+}
+
+/* Back to home link on contact.html page */
+#backToHome {
+	text-decoration: underline;
+	padding-bottom: 2em;
+	font-size: 150%;
+}
+
+/* Style Rules for HEADER */
+
+header {
+	width: 100%;
+	float: left;
+	position: sticky;
+	top: 0;
+}
+
+header img {
+	float: left;
+	width: 10%;
+}
+
+/* the styles for nav_menu */
+#nav_menu {
+	padding-bottom: 2em;
+}
+
+#nav_menu img {
+	margin-right: 20em;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+    position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+	position: relative;
+	padding-left: 1em;
+	font-size: 120%;
+}
+
+#nav_menu ul ul {
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	display: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu ul ul li {
+    width: 100%;
+    clear: both;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#nav_menu ul li a {
+	display: block;
+	width: auto;
+	height: 0.1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+#nav_menu ul li a:hover, a:focus {
+	text-decoration: underline;
+}
+
+#nav_menu ul li a.current {
+	text-decoration: underline;
+}
+
+/* Style rules for main element */
+main {
+	padding-left: 1em;
+}
+
+main img {
+    float: left;
+	padding-top: 1em;
+	margin-right: 1em;
+}
+
+/* Style rules for article */
+article {
+	text-align: left;
+	margin-left: 1em;
+	margin-bottom: 3em;
+}
+
+article h2 {
+	font-size: 200%;
+	text-shadow: -2px -2px 4px red;
+	color: rgb(183, 74, 27);
+}
+
+p {
+	color: beige;
+	font-size: 2em;
+}
+
+/* styles for section */
+section {
+	width: 40%;
+	/* margin: 0 auto; */
+}
+
+section ul {
+	list-style: none;
+}
+
+section img {
+	width: 100%;
+}
+
+section figcaption {
+	font-size: 1.5em;
+}
+
+/* Style rule for news aside */
+#news {
+	width: 50%;
+	float: right;
+}
+
+#news img {
+	width: 70%;
+}
+
+#news figcaption {
+	clear: both;
+	text-align: left;
+	font-size: 1.5em;
+}
+
+/*Style rules for FOOTER element*/
+footer {
+    color: beige;
+	clear: both;
+	padding-top: 1em;
+}
+
+footer p {
+	text-align: center;
+}
+
+/* styles for social_media_menu */
+#social_media_menu {
+	clear: both;
+	margin: 0 auto;
+	position: relative;
+    /* float: left; */
+	width:14%;
+}
+
+#social_media_menu ul {
+	list-style-type: none;
+	/* padding-left: 59em; */
+	/* margin: 0 auto; */
+}
+
+#social_media_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#social_media_menu ul li {
+	float: left;
+	padding-left: 1em;
+	font-size: 120%;
+}
+
+#social_media_menu ul li a {
+	display: block;
+	width: auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+} 
+
+#social_media_menu ul li a {
+	display: block;
+	width: auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+}
+
+/* Style rules for media queries */
+#mobile_menu {
+    display: none;
+}
+
+/* Media query for 1024 */
+@media only screen and (max-width:1024px){
+    body {
+        height: auto;
+    }
+
+    #sidebarB {
+        width: 50%;
+    }
+
+    h2::first-letter-letter {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+}
+
+/* Media query for 768px */
+@media only screen and (max-width:768px){
+    #nav_menu{
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    #header {
+        position: relative; /*undu sticky*/
+    }
+
+    #sidebarA, section, #sidebarB {
+        float: none;
+        clear: both;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+}

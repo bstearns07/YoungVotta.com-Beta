@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Merch">
+        <title>Young Votta | Merch</title>
+        <link rel="stylesheet" href="../styles/merch.css">
+
+        <!-- Add link and script for slipnav menu -->
+        <!-- link and scripts for mobile menu -->
+        <link rel="stylesheet" href="../styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <link rel="shortcut icon" href="../images/v_favicon.ico">
+
+    </head>
+
+    <body>
+        
+        <header>
+            <!-- Add mobile menu -->
+            <nav id="mobile_menu"></nav>
+
+            <!-- Add nav menu -->
+            <nav id="nav_menu">
+                <ul>
+                <figure>
+                    <a href="../index.html"><img src="../images/LogoImage.jpg" alt="Logo"></a>
+                 </figure>
+                
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="#" class="current">Merch</a>
+                        <ul>
+                            <li><a href="apparel.html">Apparel</a></li>
+                            <li><a href="memorabilia.html">Memorabilia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Merchandise</h1>
+    
+        <main>
+            <figure class="figure" id="ssFigure">
+                <a href="underConstruction.html"> <img id="shortSleeve" class="merchImage" src="../images/shortSleeveTshirt.png" alt="shortSleeveTshirt"></a>
+                <figcaption>Short-Sleeve T-shirt<br>&29.99</figcaption>
+            </figure>
+            <figure class="figure">
+                <a href="underConstruction.html"> <img id="hoodie" class="merchImage" src="../images/hoodie.png" alt="hoodie"></a>
+                <figcaption>Votta Hoodie<br>$59.99</figcaption>
+            </figure>
+            <figure>
+                <a href="underConstruction.html"><img id="tumbler" class="merchImage" src="../images/tumbler.png" alt="tumbler"></a>
+                <figcaption>Young Votta Tumbler<br>&29.99</figcaption>
+            </figure>
+        </main>
+
+        <aside id="sidebarA">
+            <figure>
+                <a href="underConstruction.html"> <img id="longSleeve" class="merchImage" src="../images/longSleeveTshirt.png" alt=""></a>
+                <figcaption>Long-Sleeve T-shirt<br>$34.99</figcaption>
+            </figure>
+            <figure>
+                <a href="underConstruction.html"><img id="cap" class="merchImage" src="../images/cap.png" alt="cap"></a>
+                <figcaption>Young Votta Cap<br>$24.99</figcaption>
+            </figure>
+            <figure>
+                <a href="underConstruction.html"> <img id="bag" class="merchImage" src="../images/bag.png" alt="carryingBag"></a>
+                <figcaption>Votta Carrying Bag<br>$19.99</figcaption>
+            </figure>
+        </aside>
+
+        <footer>
+            <!-- Include some sort of footer to display at the bottom of the page -->
+            <nav id="social_media_menu">
+                <ul>
+                    <li><a href="https://www.facebook.com/yvodzilla" target="_blank"><img src="../images/facebook_icon.png" width="40px" alt=""></a></li>
+                    <li><a href="https://www.youtube.com/@votta2001" target="_blank"><img src="../images/youtube_icon.png" width="40px" alt=""></a></li>
+                    <li><a href="https://www.tiktok.com/@vodzilla" target="_blank"><img src="../images/tick_toc_icon.jpg" width="40px" alt=""></a></li>
+                </ul>
+            </nav>
+            <p><a href="disclaimer.html">Disclaimer</a></p>
+            <p>Young Votta &trade;</p></p>
+            <p>
+                  <script>
+                    var today = new Date();
+                    document.write("&copy ")
+                    document.write(today.getFullYear())
+                    document.write(" All rights reserved")
+                  </script>
+            </p>
+        </footer>
+    
+</body>
+</html>

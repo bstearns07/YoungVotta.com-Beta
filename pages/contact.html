@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Contact Young Votta">
+        <title>Contact | Young Votta</title>
+        <link rel="stylesheet" href="../styles/contact.css">
+
+        <!-- Add link and script for slipnav menu -->
+        <!-- link and scripts for mobile menu -->
+        <link rel="stylesheet" href="../styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <link rel="shortcut icon" href="../images/v_favicon.ico">
+
+    </head>
+
+    <body>
+        
+            <header>
+                <!-- Add mobile menu -->
+                <nav id="mobile_menu"></nav>
+
+                <!-- Add nav menu -->
+                <nav id="nav_menu">
+                    <ul>
+                    <figure>
+                        <a href="../index.html"><img src="../images/LogoImage.jpg" alt="Logo"></a>
+                     </figure>
+                    
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="merch.html">Merch</a>
+                            <ul>
+                                <li><a href="apparel.html">Apparel</a></li>
+                                <li><a href="memorabilia.html">Memorabilia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="current">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <!-- Add FORM -->
+                <form id="email_form" name="email_form" action="form.html" method="GET" enctype="multipart/form-data">
+                    <h1>Contact Young Votta Below</h1>
+                    <a href="https://www.facebook.com/yvodzilla" target="_blank">Facebook</a>
+                    <p>
+                        <label for="firstName">First Name</label><br>
+                        <input type="text" name="First Name" id="firstName" autofocus required>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name</label><br>
+                        <input type="text" name="Last Name" id="name" autofocus required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="Email" id="email" required>
+                    </p>
+                    <p>
+                        <label for="subject">Subject</label><br>
+                        <input type="text" name="Subject" id="subject" required>
+                    </p>
+                    <p>
+                        <label for="message">Message</label><br>
+                        <textarea name="Message" id="Message" cols="100" rows="10" required></textarea>
+                    </p>
+                    <input type="submit" id="send" value="Send">
+                    <input type="reset" id="resetForm" value="Reset">
+                </form>
+            </main>
+        
+            <footer>
+                <!-- Include some sort of footer to display at the bottom of the page -->
+                <nav id="social_media_menu">
+                    <ul>
+                        <li><a href="https://www.facebook.com/yvodzilla" target="_blank"><img src="../images/facebook_icon.png" width="40px" alt=""></a></li>
+                        <li><a href="https://www.youtube.com/@votta2001" target="_blank"><img src="../images/youtube_icon.png" width="40px" alt=""></a></li>
+                        <li><a href="https://www.tiktok.com/@vodzilla" target="_blank"><img src="../images/tick_toc_icon.jpg" width="40px" alt=""></a></li>
+                    </ul>
+                </nav>
+                <p><a href="pages/disclaimer.html">Disclaimer</a></p>
+                <p>Young Votta &trade;</p></p>
+                <p>
+                      <script>
+                        var today = new Date();
+                        document.write("&copy ")
+                        document.write(today.getFullYear())
+                        document.write(" All rights reserved")
+                      </script>
+                </p>
+            </footer>
+    
+</body>
+</html>

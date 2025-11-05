@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Home page for YoungVotta.com">
+        <title>Home | Young Votta</title>
+        <link rel="stylesheet" href="/styles/main.css">
+
+        <!-- Add link and script for slipnav menu -->
+        <!-- link and scripts for mobile menu -->
+        <link rel="stylesheet" href="/styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+        <script src="/js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <link rel="shortcut icon" href="images/v_favicon.ico">
+        <!-- Link to print page javascript: OVERRIDES mobile menu but using this for demonstation -->
+        <script src="js/printButton.js"></script>
+        <!-- Add breadcrumb trail style -->
+    </head>
+
+    <body>
+            <header>
+                <!-- Add mobile menu -->
+                <nav id="mobile_menu"></nav>
+
+                <!-- Add nav menu -->
+                <nav id="nav_menu">
+                    <ul>
+                    <figure>
+                        <a href="#" class="current"><img src="images/LogoImage.jpg" alt="Logo"></a>
+                     </figure>
+                        <li><a href="pages/videos.html">Videos</a></li>
+                        <li><a href="pages/merch.html">Merch</a>
+                            <ul>
+                                <li><a href="pages/apparel.html">Apparel</a></li>
+                                <li><a href="pages/memorabilia.html">Memorabilia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <main>    
+            <!-- Include appropriate content for main content of home page, including <h1>, <l>, <p> etc as necessary -->
+                <img id="logo" src="/images/homeImage.jpg" alt="Votta" width="300px"> 
+
+                <article>
+                    <h2>About the Artist</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis est blanditiis sed. Enim labore odit, eos suscipit quam consequatur id quod necessitatibus perferendis praesentium ipsum voluptatibus quisquam ratione, corrupti optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero natus, reiciendis quidem ut mollitia excepturi. Saepe, accusantium consequuntur facilis voluptate doloribus eveniet itaque vero placeat consequatur quas officiis laborum! Perspiciatis!
+                    </p>
+                </article>
+
+                <aside id="news">
+                    <h2>News</h2>
+                    <figure>
+                        <a href="https://norfolkdailynews.com/news/young-artist-music-saved-my-life/article_c2a12be4-90da-5768-ac3d-5c7f5b0a200e.html"><img src="images/articleImage.jpg" alt="article image"></a>
+                        <figcaption> <a href="https://norfolkdailynews.com/news/young-artist-music-saved-my-life/article_c2a12be4-90da-5768-ac3d-5c7f5b0a200e.html">'Young' artist: Music saved my life</a></figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://ourstage.com/profile/youngvotta"><img src="images/articleImage2.jpg" alt="article image"></a>
+                        <figcaption> <a href="https://ourstage.com/profile/youngvotta">Young Votta: Bibliography</a></figcaption>
+                    </figure>
+                    <figure>
+                        <a href="https://norfolkdailynews.com/online_extras/young-votta-performs-cornhusker-fight-club-anthem/youtube_8f4dbfec-cffb-11e0-9990-0019bb30f31a.html"><img src="images/articleImage3.jpg" alt="article image"></a>
+                        <figcaption> <a href="https://norfolkdailynews.com/online_extras/young-votta-performs-cornhusker-fight-club-anthem/youtube_8f4dbfec-cffb-11e0-9990-0019bb30f31a.html">Young Votta performs Cornhusker Fight Club anthem</a></figcaption>
+                    </figure>
+                </aside>
+
+                <section>
+                    <h2>Upcoming Events</h2>
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src="images/NewYearsShow.jpg" alt="NewYearsBash">
+                                <figcaption>
+                                    Event Date: Saturday December 31, 2023<br>
+                                    Doors Open: 7pm<br>
+                                    Get tickets <a href="pages/underConstruction.html">Here</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/StevieStoneShow.jpg" alt="Stevie Stone Show">
+                                <figcaption>
+                                    Event Date: Saturday December 31, 2023<br>
+                                    Doors Open: 6pm<br>
+                                    Get tickets <a href="pages/underConstruction.html">Here</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/SkitzKravenShow.jpg" alt="SkitzKravenShow">
+                                <figcaption>
+                                    Event Date: Saturday November 22, 2023<br>
+                                    Doors Open: 6pm<br>
+                                    Get tickets <a href="pages/underConstruction.html">Here</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+        </main>
+
+    <footer>
+        <!-- Include some sort of footer to display at the bottom of the page -->
+        <nav id="social_media_menu">
+            <ul>
+                <li><a href="https://www.facebook.com/yvodzilla" target="_blank"><img src="images/facebook_icon.png" width="40px" alt=""></a></li>
+                <li><a href="https://www.youtube.com/@votta2001" target="_blank"><img src="images/youtube_icon.png" width="40px" alt=""></a></li>
+                <li><a href="https://www.tiktok.com/@vodzilla" target="_blank"><img src="images/tick_toc_icon.jpg" width="40px" alt=""></a></li>
+            </ul>
+        </nav>
+        <p> <input type="button" id="printButton" value="Print Page"></p>
+        <p><a href="pages/disclaimer.html">Disclaimer</a></p>
+        <p>Young Votta &trade;</p></p>
+        <p>
+              <script>
+                var today = new Date();
+                document.write("&copy ")
+                document.write(today.getFullYear())
+                document.write(" All rights reserved")
+              </script>
+        </p>
+    </footer>
+
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Memoriablilia">
+        <title>Memorabilia | Young Votta</title>
+        <link rel="stylesheet" href="../styles/apparelAndMem.css">
+
+        <!-- Add link and script for slipnav menu -->
+        <!-- link and scripts for mobile menu -->
+        <link rel="stylesheet" href="../styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <link rel="shortcut icon" href="../images/v_favicon.ico">
+
+    </head>
+
+    <body>
+        
+            <header>
+                <!-- Add mobile menu -->
+                <nav id="mobile_menu"></nav>
+
+                <!-- Add nav menu -->
+                <nav id="nav_menu">
+                    <ul>
+                        <figure>
+                            <a href="../index.html">   <img src="../images/LogoImage.jpg" alt="Logo"></a>
+                         </figure>
+                        <li><a href="../pages/videos.html">Videos</a></li>
+                        <li><a href="../pages/merch.html">Merch</a>
+                            <ul>
+                                <li><a href="../pages/apparel.html">Apparel</a></li>
+                                <li><a href="#" class="current">Memorabilia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <aside id="sidebarA">
+                <figure>
+                    <a href="underConstruction.html"> <img src="../images/bag.png" alt="carryingBag"></a>
+                    <figcaption>Votta Carrying Bag<br>$19.99<br><a href="underConstruction.html"><button>Buy Now</button></a></figcaption>
+                </figure>
+            </aside>
+            <main>
+                <figure>
+                    <a href="underConstruction.html"><img src="../images/tumbler.png" alt="tumbler"></a>
+                    <figcaption>Young Votta Tumbler<br>&29.99<br><a href="underConstruction.html"><button>Buy Now</button></a></figcaption>
+                </figure>
+            </main>
+
+            <footer>
+                <!-- Include some sort of footer to display at the bottom of the page -->
+                <nav id="social_media_menu">
+                    <ul>
+                        <li><a href="https://www.facebook.com/yvodzilla" target="_blank"><img src="../images/facebook_icon.png" width="40px" alt=""></a></li>
+                        <li><a href="https://www.youtube.com/@votta2001" target="_blank"><img src="../images/youtube_icon.png" width="40px" alt=""></a></li>
+                        <li><a href="https://www.tiktok.com/@vodzilla" target="_blank"><img src="../images/tick_toc_icon.jpg" width="40px" alt=""></a></li>
+                    </ul>
+                </nav>
+                <p><a href="pages/disclaimer.html">Disclaimer</a></p>
+                <p>Young Votta &trade;</p></p>
+                <p>
+                      <script>
+                        var today = new Date();
+                        document.write("&copy ")
+                        document.write(today.getFullYear())
+                        document.write(" All rights reserved")
+                      </script>
+                </p>
+            </footer>
+    </body>
+</html>
