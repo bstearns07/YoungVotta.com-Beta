@@ -15,7 +15,6 @@ Ben Stearns - [@bstearns07](https://github.com/bstearns07)
 ## Table of Contents
 - 📌 [Summary](#-summary)
 - ⭐ [How It Works](#-how-it-works)
-- 🚀 [Live Demo](#-live-demo)
 - ✨ [Features](#-features)
 - 🧰 [Tech Stack](#-tech-stack)
 - 🔧 [Development Tools](#-development-tools)
@@ -47,6 +46,16 @@ It serves as a foundation for building a polished, production-ready website whil
 - Content is dynamically rendered based on the structure of the application
 - Styling and layout are handled using modern CSS techniques or frameworks
 - The app is designed to be easily expandable for future features
+
+---
+
+## ✨ Features
+- 🎨 Clean and modern UI design
+- 📱 Fully responsive layout
+- ⚡ Fast and lightweight performance
+- 🧭 Structured navigation system
+- 🧱 Scalable project architecture
+- 🔄 Beta iteration for continuous improvement
 
 ---
 
@@ -88,4 +97,4 @@ It serves as a foundation for building a polished, production-ready website whil
 ## 🖼 Screenshots
 
 ### Home Page
-[Home Page](images/home_page.png)
+![Home Page](images/home.png)
